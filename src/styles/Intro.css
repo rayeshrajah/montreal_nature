@@ -1,0 +1,61 @@
+@keyframes moveInLeft{
+    0%{
+        opacity: 0;
+        transform: translateX(-100px);
+    }
+
+    80%{
+        transform: translateX(20px);
+    }
+    
+    100%{
+        transform: translateX(0px);
+        opacity: 1;
+    }
+}
+
+@keyframes moveInRight{
+    0%{
+        opacity: 0;
+        transform: translateX(100px);
+    }
+
+    80%{
+        transform: translateX(-20px);
+    }
+    
+    100%{
+        transform: translateX(0px);
+        opacity: 1;
+    }
+}
+
+.intro-main-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: linear-gradient(to right bottom,rgba(126, 213, 111, 0.7), rgba(40, 180, 133, 0.7)), url(../images/robbie-koeck-s3B4Vpe6DPY-unsplash.jpg);
+    background-size: cover;
+    background-position: bottom;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 80vh);
+    color: #FFFFFF
+}
+
+.intro-text-container{
+    display: flex;
+    flex-direction: column;
+}
+
+.intro-text-container > h1{
+    font-size: 50px;
+    letter-spacing: 20px;
+    animation: moveInLeft 1s;
+}
+
+.intro-text-container > p{
+    font-size: 25px;
+    letter-spacing: 12px;
+    animation: moveInRight 1s;
+}
+
