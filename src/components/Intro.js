@@ -10,8 +10,8 @@ export default function Intro(){
                 <img src={Logo} alt="Nature Picture"></img>
             </div>
             <div className="intro-text-container">
-                <h1>Quebec Nature</h1>
-                <p>Discover nature at it's finest</p>
+                <h1>Nature in Quebec</h1>
+                <p>Discover Earth's Hidden Gems</p>
                 <span><FontAwesomeIcon icon="arrow-down" size="3x"/></span>
             </div>
         </div>
