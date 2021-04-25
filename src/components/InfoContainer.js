@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useRef, useLayoutEffect, useState } from "react";
 import "../styles/InfoContainer.css";
 import InfoBox from "../custom_components/InfoBox";
 import Image1 from "../images/mont_royal.jpg"
@@ -14,13 +14,14 @@ let arrayTitles = [
                   ]
 
 export default function InfoContainer() {
+
     return(
     <div className="info-master-container">
         <h1>Breathtaking Sceneries</h1>
         <div className="info-container">
-            {arrayTitles.map((element) => {
+            {arrayTitles.map((element) => { 
                 return(
-                    <InfoBox title={element.title} image={element.image}/>
+                    <InfoBox title={element.title} image={element.image} />
                     );
                 })}
         </div>
