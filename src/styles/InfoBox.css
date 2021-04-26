@@ -1,8 +1,13 @@
+.mini-info-main-container{
+  display: flex;            /* new */
+  align-items: center;      /* new */
+  justify-content: center;  /* new */
+}
+
 .mini-info-main-container > p{
   text-align: center;
   font-size: 20px;
   letter-spacing: 10px;
-  color: rgb(34, 155, 114);
 }
 
 .mini-info-box-container{
@@ -38,4 +43,9 @@
 
 .photo-credits:hover{
     height: 350px;
+}
+
+.photo-credits > a{
+    font-size: 18px;
+    color: white;
 }
