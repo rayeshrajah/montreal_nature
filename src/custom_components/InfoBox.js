@@ -32,7 +32,7 @@ export default function InfoBox({title, image, person, splashUrl}) {
     useLayoutEffect(() => {
         const onScroll = () => {
             const scrollPos = window.scrollY + window.innerHeight;
-            if(scrollPos > 1800){
+            if(scrollPos > 1700){
                 setShow(true);
             }
         }

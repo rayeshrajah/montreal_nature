@@ -1,7 +1,7 @@
 .mini-info-main-container{
-  display: flex;            /* new */
-  align-items: center;      /* new */
-  justify-content: center;  /* new */
+  display: flex;            
+  align-items: center;      
+  justify-content: center;  
 }
 
 .mini-info-main-container > p{
@@ -28,7 +28,7 @@
     top: 0px;
     height: 0%;
     z-index: 2;
-    background-color:  rgba(40, 180, 133, 0.7);
+    background-color:  rgba(40, 180, 133, 0.5);
     width: auto;
     margin: auto;
     transition: height 1000ms;

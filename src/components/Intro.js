@@ -1,6 +1,6 @@
 import React from 'react';
 import "../styles/Intro.css";
-import Logo from "../images/nature_logo.png"
+import Logo from "../images/QuebecFlag.png"
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 export default function Intro(){
