@@ -4,7 +4,7 @@ import styled, { keyframes } from "styled-components";
 
 
 
-export default function InfoBox({title, image}) {
+export default function InfoBox({title, image, person, splashUrl}) {
 
     const fadeLeft = keyframes`
     0% {
@@ -45,6 +45,10 @@ export default function InfoBox({title, image}) {
         <Div animate={show} className="mini-info-main-container" ref={scrollBarRef}>
         <p>{title}</p>
         <div className="mini-info-box-container" style={{background: `url(${image})`, backgroundSize: "cover", backgroundPosition: "center"}}>
+          <div className="photo-credits">
+              <h3>Photo Taken by:</h3>
+              <a href={splashUrl}>{person}</a>
+          </div>
         </div>
         </Div>
     );

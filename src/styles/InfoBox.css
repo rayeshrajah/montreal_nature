@@ -6,8 +6,36 @@
 }
 
 .mini-info-box-container{
+    position: relative;
     width: 300px;
     height: 350px;
-    border-radius: 25px;
+    border-radius: 5px;
+    z-index: 1;
+    border: 1px solid rgba(40, 180, 133, 0.7);
 }
 
+.photo-credits{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    top: 0px;
+    height: 0%;
+    z-index: 2;
+    background-color:  rgba(40, 180, 133, 0.7);
+    width: auto;
+    margin: auto;
+    transition: height 1000ms;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.mini-info-box-container:hover > .photo-credits{
+    height: 350px;
+    top: 0px;
+}
+
+.photo-credits:hover{
+    height: 350px;
+}
