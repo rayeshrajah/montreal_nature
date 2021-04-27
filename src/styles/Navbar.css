@@ -14,10 +14,18 @@
 }
 
 .nav-dropdown-container{
-    height: 250px;
+    height: 100px;
     position: fixed;
-    left: 75px;
+    left: 65px;
     top: 200px;
     width: 100px;
     z-index: 1;
+}
+
+.nav-dropdown-box button{
+    border: none;
+    height: 50px;
+    color: #3397DE;
+    border-bottom: 1px solid #3397DE;
+    background-color: rgba(13, 155, 13, 0.2);
 }

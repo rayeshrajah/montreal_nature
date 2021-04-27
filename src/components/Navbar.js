@@ -43,9 +43,12 @@ const NavDropDown = styled.div`
         width: auto;
         margin: auto;
         overflow: hidden;
+        display: flex;
+        flex-direction: column;
+        border: ${props => props.open ? "1px solid rgba(40, 180, 133, 0.7)" : "none"};
     `;
 
-export default function Navbar() {
+export default function Navbar(props) {
     const [open, setOpen] = useState(false);
 
     return (
@@ -58,8 +61,9 @@ export default function Navbar() {
                 </StyledMenu>
             </div>
             <div className="nav-dropdown-container">
-                <NavDropDown open={open} >
-            
+                <NavDropDown className="nav-dropdown-box" open={open} >
+                    <button onClick={props.goIntro}>Intro</button>
+                    <button onClick={props.goScenery}>Scenery</button>
                 </NavDropDown>
             </div>
         </div>

@@ -1,4 +1,4 @@
-import React, { useRef } from 'react';
+import React, { useRef, useEffect } from 'react';
 import './App.css';
 import './components/Navbar'
 import Intro from './components/Intro';
@@ -10,9 +10,31 @@ import Navbar from './components/Navbar';
 library.add(fab, faCheckSquare, faCoffee, faArrowDown)
 
 function App() {
+  const domRef = useRef(null);
+
+useEffect(() => {
+console.log(domRef.current.children[1]);
+}, [domRef])
+
+function scrollToIntro() {
+  domRef.current.children[1].scrollIntoView({
+    behaviour: "smooth",
+    block: "nearest",
+    inline: "start"
+  })
+}
+
+function scrollToScenery() {
+  domRef.current.children[2].scrollIntoView({
+    behaviour: "smooth",
+    block: "nearest",
+    inline: "start"
+  })
+}
+
   return (
-    <div className="App">
-      <Navbar />
+    <div className="App" ref={domRef}>
+      <Navbar goIntro={scrollToIntro} goScenery={scrollToScenery}/>
       <Intro />
       <InfoContainer />
     </div>
