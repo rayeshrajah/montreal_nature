@@ -7,6 +7,7 @@ import { fab } from '@fortawesome/free-brands-svg-icons'
 import { faCheckSquare, faCoffee, faArrowDown } from '@fortawesome/free-solid-svg-icons'
 import InfoContainer from './components/InfoContainer';
 import Navbar from './components/Navbar';
+import Benefits from './components/Benefits';
 library.add(fab, faCheckSquare, faCoffee, faArrowDown)
 
 function App() {
@@ -37,6 +38,7 @@ function scrollToScenery() {
       <Navbar goIntro={scrollToIntro} goScenery={scrollToScenery}/>
       <Intro />
       <InfoContainer />
+      <Benefits />
     </div>
   );
 }
