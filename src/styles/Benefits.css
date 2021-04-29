@@ -10,9 +10,16 @@
     justify-content: space-evenly;
 }
 
+.benefits-main-container > h1{
+    font-size: 50px;
+    color: #fff;
+    letter-spacing: 10px;
+}
+
 .benefits-box{
     display: flex;
     width: 80%;
     flex-direction: row;
     justify-content: space-around;
+    flex-wrap: wrap;
 }

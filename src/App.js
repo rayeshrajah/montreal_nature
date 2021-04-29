@@ -33,9 +33,17 @@ function scrollToScenery() {
   })
 }
 
+function scrollToDiscover() {
+  domRef.current.children[3].scrollIntoView({
+    behaviour: "smooth",
+    block: "nearest",
+    inline: "start"
+  })
+}
+
   return (
     <div className="App" ref={domRef}>
-      <Navbar goIntro={scrollToIntro} goScenery={scrollToScenery}/>
+      <Navbar goIntro={scrollToIntro} goScenery={scrollToScenery} goBenefits={scrollToDiscover} />
       <Intro />
       <InfoContainer />
       <Benefits />

@@ -64,6 +64,7 @@ export default function Navbar(props) {
                 <NavDropDown className="nav-dropdown-box" open={open} >
                     <button onClick={props.goIntro}>Intro</button>
                     <button onClick={props.goScenery}>Scenery</button>
+                    <button onClick={props.goBenefits}>Benefits</button>
                 </NavDropDown>
             </div>
         </div>
